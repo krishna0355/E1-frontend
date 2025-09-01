@@ -514,7 +514,7 @@ useEffect(() => {
             <button
   onClick={async () => {
     try {
-      const res = await fetch("http://localhost:8000/api/load-distribution/download", {
+      const res = await fetch("https://e1-backend.onrender.com/api/load-distribution/download", {
         method: "GET",
       })
       const blob = await res.blob()
